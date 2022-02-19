@@ -3037,19 +3037,19 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #cf5331;
-  border-color: #c34e2e;
+  background-color: #914dff;
+  border-color: #914dff;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #cf5331;
-  border-color: #c34e2e;
+  background-color: #af8cff;
+  border-color: #af8cff;
   box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #c34e2e;
-  border-color: #b74a2c;
+  background-color: #af8cff;
+  border-color: #af8cff;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
@@ -11390,9 +11390,9 @@ hr.divider-light {
 }
 
 header.masthead {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  padding-top: 20rem;
+  padding-bottom: 0; /* calc(10rem - 4.5rem); */
+  background: linear-gradient(to bottom, rgba(175, 140, 255, 1) 0%, rgba(175, 140, 255, 0) 30%, rgba(175, 140, 255, 0) 100%), url("../assets/img/bg-logo-white.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
