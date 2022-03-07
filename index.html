@@ -212,55 +212,30 @@
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-0">
                     <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN" target="_top" action="https://formspree.io/f/xayvjaob" method="post" enctype="text/plain">
+                        <!-- * * Contact Form * *-->
+                        <form id="contactForm" target="_top" action="https://formspree.io/f/xayvjaob" method="post">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" name="name" type="text" placeholder="Introduce tu nombre..." data-sb-validations="required" />
+                                <input class="form-control" id="name" name="Nombre" type="text" placeholder="Introduce tu nombre..." required/>
                                 <label for="name">Nombre completo</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">Por favor, introduce un nombre.</div>
                             </div>
                             <!-- Email address input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="email" name="email" type="email" placeholder="nombre@ejemplo.com" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" name="Email" type="email" placeholder="nombre@ejemplo.com" required/>
                                 <label for="email">Direcci&oacute;n de email</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">Por favor, introduce una direcci&oacute;n de email.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">El email introducido no es v&aacute;lido.</div>
                             </div>
                             <!-- Subject input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="subject" name="subject" type="text" placeholder="Introduce el asunto del mensaje..." data-sb-validations="required" />
+                                <input class="form-control" id="subject" name="Asunto" type="text" placeholder="Introduce el asunto del mensaje..." required/>
                                 <label for="subject">Asunto</label>
-                                <div class="invalid-feedback" data-sb-feedback="subject:required">Por favor, introduce el asunto del mensaje.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" name="message" type="text" placeholder="Introduce tu mensaje aquí..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" name="Mensaje" type="text" placeholder="Introduce el mensaje..." style="height: 10rem" required></textarea>
                                 <label for="message">Mensaje</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Por favor, introduce un mensaje.</div>
                             </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Formulario enviado correctamente!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al enviar el formulario!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" name="submitButton" type="submit">Enviar</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button></div>
                         </form>
                     </div>
                 </div>
@@ -282,10 +257,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
