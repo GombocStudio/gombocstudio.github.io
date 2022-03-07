@@ -4,7 +4,7 @@ if(isset($_POST["submit"]))
     // Checking For Blank Fields..
     if($_POST["name"]==""||$_POST["email"]==""||$_POST["subject"]==""||$_POST["message"]=="")
     {
-        echo "<h3>Todos los campos deben estar completos.</h3>";
+        echo "Fill All Fields..";
     }
     else
     {
@@ -17,7 +17,7 @@ if(isset($_POST["submit"]))
 
         if (!$email)
         {
-            echo "<h3>El email introducido no es valido.</h3>";
+            echo "Invalid Sender's Email";
         }
         else
         {
@@ -29,7 +29,7 @@ if(isset($_POST["submit"]))
             $message = wordwrap($message, 70);
             // Send Mail By PHP Mail Function
             mail("gombocstudio@hotmail.com", $subject, $message, $headers);
-            echo "<h3>Formulario enviado correctamente!</h3>";
+            echo "Your mail has been sent successfuly ! Thank you for your feedback";
         }
     }
 }
